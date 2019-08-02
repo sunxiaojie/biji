@@ -8,4 +8,7 @@
 6. 查看服务器的定时器`vim /etc/crontab`，发现有定时任务，里边的定时器就是病毒的定时任务，将该定时任务删除掉即可
 7. 查看防火墙状态`systemctl  status firewall.service`
 8. 开启防火墙`systemctl restart firewalld.service`
+9. 本以为后续结束了，但是中午吃过饭，发现cpu又暴增起来了
+10. 后续进入`cd ～` `ll-a`发现有很多可以文件，统统删除
+11. 同时进入`cd .ssh`发现一个可以的私钥账号，二话不说，立马干掉，此时世界都清净了
 > 查了资料，大部分建议关闭redis对外开放端口，可以将redis对外端口关闭
