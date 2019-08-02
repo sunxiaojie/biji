@@ -7,8 +7,8 @@
 4. 通过`ps -ef | grep pid`查看的到具体的执行命令，将对应的执行文件删除掉，发现过一会重复出现
 5. `kill -9 pid`掉进程后，过一会服务器又卡顿
 6. 查看服务器的定时器`vim /etc/crontab`，发现有定时任务，里边的定时器就是病毒的定时任务，将该定时任务删除掉即可
-7. 查看防火墙状态`systemctl  status firewall.service`
-8. 开启防火墙`systemctl restart firewalld.service`
+7. 查看防火墙状态`systemctl status firewalld`
+8. 开启防火墙`systemctl restart firewalld`
 9. 本以为后续结束了，但是中午吃过饭，发现cpu又暴增起来了
 10. 后续进入`cd ～` `ll-a`发现有很多可以文件，统统删除
 11. 同时进入`cd .ssh`发现一个可以的私钥账号，二话不说，立马干掉，此时世界都清净了
